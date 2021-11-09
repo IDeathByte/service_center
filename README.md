@@ -1,0 +1,1 @@
+Sample page of some service.
