@@ -6,38 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service page</title>
     <link rel="stylesheet" href="styles/stylesheet.css">
+    <link href="https://allfont.ru/allfont.css?fonts=sansation-regular" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top nav">
-            <div class="logo"></div>
-            <div class="navbar-menu">
-                <span><a href="">Home</a></span>
-                <span><a href="">About</a></span>
-                <span><a href="">Services</a></span>
-                <span><a href="">Portfolio</a></span>
-                <span><a href="">Shop</a></span>
-                <span><a href="">Contact</a></span>
-                <span><a href="">Pages</a></span>
+    <header class="elem" id="home">
+        <nav>
+            <div class="logo">
+                <h1>LO</h1>
+                <h1>GO</h1>
+             </div>
+
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="http://">Contact</a></li>
+               <li><a href="http://">Pages</a></li>
+            </ul>
+        
+            <div class="social-links">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
             </div>
-            <div class="social-icons"></div>
-        </nav>
-        <div class ="services-galery"></div>
+        </nav>    
+        <div class="home-description">
+            <h1>THE BEST SERVICES</h1>
+            <p>We provide the best services in the world We provide the best services in the world We provide the best services in the world</p>
+            <br>
+            <a href="#">HIRE US</a>
+        </div>
     </header>
 
-    <main>
-        <section class ="about">
-            <div class ="art"></div>
-            <div class ="description"></div>
-        </section>
+    <content class="about elem" id="about">
+        <img src="images/about.png" style="max-width:50%" alt="Some info about us"></img>
+        <div>
+            <h1>A LITTLE ABOUT US</h1>
 
-        <section class ="services"></section>
-        <section class ="feedback"></section>
-        <section class="clients"></section>
-        <section class="quote"></section>
-    </main>
+            <p>We are  a company based in india with the motto “Digitalally 
+                Designed India”. We are  a company based in india with the motto
+                “Digitalally  Designed India”. We are  a company based in india
+                with the motto “Digitalally  Designed India”.
+                <br>
+                <br>
+                We are  a company based in india with the motto “Digitalally
+                Designed India”. We are  a company based in india with the 
+                motto “Digitalally Designed India”.  We are  a company based in
+                India with the motto “Digitalally Designed India”.  We are  a 
+                company based in india with the motto “Digitalally Designed India”.</p>
+                <br>
+                <a href="#">READ MORE DETAILS</a>
+        </div>
 
-    <footer>
-    </footer>
+    </content>
+
+    <content class="services elem" id="services">
+        <div class="head">
+            <div></div>
+            <div><h1>OUR SERVICES</h1></div>
+            <div></div>
+        </div>
+    </content>
+
+    <content class="feedback elem" id="feedback">
+        <div class="head">
+            <div></div>
+            <div><h1>FEEDBACK</h1></div>
+            <div></div>
+        </div>
+    </content>
+
+    <content class="clients elem" id="feedback">
+        <div class="head">
+            <div></div>
+            <div><h1>CLIENTS</h1></div>
+            <div></div>
+        </div>
+    </content>
+
 </body>
 </html>
