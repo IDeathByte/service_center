@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/stylesheet.css">
     <link href="https://allfont.ru/allfont.css?fonts=sansation-regular" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/togglemenu.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
                 <h1>GO</h1>
              </div>
 
+            <img class="menu" id="menu" src="images/menu.png" alt="Hamburger Icon Png" onclick="showMenu()">
             <ul class="navbar">
                 <li><a href="#home">Home</a></li>
                <li><a href="#about">About</a></li>
@@ -33,8 +35,19 @@
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-google"></a>
             </div>
-        </nav>    
-        <div class="home-description">
+        </nav>
+
+        <ul class="navbar-mob" id="navbar-mob">
+            <li><a href="#home">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#services">Services</a></li>
+           <li><a href="#">Portfolio</a></li>
+           <li><a href="#">Shop</a></li>
+           <li><a href="http://">Contact</a></li>
+           <li><a href="http://">Pages</a></li>
+        </ul> 
+
+        <div class="home description">
             <h1>THE BEST SERVICES</h1>
             <p>We provide the best services in the world We provide the best services in the world We provide the best services in the world</p>
             <br>
@@ -59,20 +72,60 @@
                 India with the motto “Digitalally Designed India”.  We are  a 
                 company based in india with the motto “Digitalally Designed India”.</p>
                 <br>
-                <a href="#">READ MORE DETAILS</a>
+                <a href="#about">READ MORE DETAILS</a>
         </div>
 
     </content>
 
-    <content class="services elem" id="services">
+    <content class="elem" id="services">
         <div class="head">
             <div></div>
             <div><h1>OUR SERVICES</h1></div>
             <div></div>
         </div>
+        <div class="sc-list">
+            <div class="description">
+                <img src="images/icons/service.png">
+                <br>
+                <h1>WEB<br>DEVELOPMENT<br>1</h1>
+
+                <p>We provide the best world class web 
+                    development service We provide the best world
+                     class web development services
+                </p>
+                <br>
+                <a>MORE DETAILS</a>
+            </div>
+            <div class="description">
+                <img src="images/icons/service.png">
+                <br>
+                <h1>WEB<br>DEVELOPMENT<br>2</h1>
+
+                <p>We provide the best world class web 
+                    development service We provide the best world
+                     class web development services
+                </p>
+                <br>
+                <a>MORE DETAILS</a>
+            </div>
+            <div class="description">
+                <img src="images/icons/service.png">
+                <br>
+                <h1>WEB<br>DEVELOPMENT<br>3</h1>
+
+                <p>We provide the best world class web 
+                    development service We provide the best world
+                     class web development services
+                </p>
+                <br>
+                <a>MORE DETAILS</a>
+            </div>
+            
+            
+        </div>
     </content>
 
-    <content class="feedback elem" id="feedback">
+    <content class="elem" id="feedback">
         <div class="head">
             <div></div>
             <div><h1>FEEDBACK</h1></div>
@@ -85,6 +138,16 @@
             <div></div>
             <div><h1>CLIENTS</h1></div>
             <div></div>
+        </div>
+        <div class="sp-galery">
+            <img src="images/logos/logo_a.png">
+            <img src="images/logos/logo_b.png">
+            <img src="images/logos/logo_c.png">
+            <img src="images/logos/logo_d.png">
+            <img src="images/logos/logo_e.png">
+            <img src="images/logos/logo_f.png">
+            <img src="images/logos/logo_g.png">
+            <img src="images/logos/logo_h.png">
         </div>
     </content>
 
