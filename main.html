@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles/stylesheet.css">
     <link href="https://allfont.ru/allfont.css?fonts=sansation-regular" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="scripts/togglemenu.js"></script>
+    <script defer src="scripts/services.js"></script>
 </head>
 
 <body>
@@ -26,8 +28,8 @@
                <li><a href="#services">Services</a></li>
                <li><a href="#">Portfolio</a></li>
                <li><a href="#">Shop</a></li>
-               <li><a href="http://">Contact</a></li>
-               <li><a href="http://">Pages</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li><a href="#footer">Pages</a></li>
             </ul>
         
             <div class="social-links">
@@ -43,8 +45,8 @@
            <li><a href="#services">Services</a></li>
            <li><a href="#">Portfolio</a></li>
            <li><a href="#">Shop</a></li>
-           <li><a href="http://">Contact</a></li>
-           <li><a href="http://">Pages</a></li>
+           <li><a href="#contact">Contact</a></li>
+           <li><a href="#footer">Pages</a></li>
         </ul> 
 
         <div class="home description">
@@ -84,7 +86,10 @@
             <div></div>
         </div>
         <div class="sc-list">
-            <div class="description">
+            <div id="sc-prev" onclick="scPrev()">
+                <h1><</h1>
+            </div>
+            <div class="service description">
                 <img src="images/icons/service.png">
                 <br>
                 <h1>WEB<br>DEVELOPMENT<br>1</h1>
@@ -96,7 +101,7 @@
                 <br>
                 <a>MORE DETAILS</a>
             </div>
-            <div class="description">
+            <div class="service description">
                 <img src="images/icons/service.png">
                 <br>
                 <h1>WEB<br>DEVELOPMENT<br>2</h1>
@@ -108,7 +113,7 @@
                 <br>
                 <a>MORE DETAILS</a>
             </div>
-            <div class="description">
+            <div class="service description">
                 <img src="images/icons/service.png">
                 <br>
                 <h1>WEB<br>DEVELOPMENT<br>3</h1>
@@ -120,16 +125,10 @@
                 <br>
                 <a>MORE DETAILS</a>
             </div>
+            <div id="sc-next" onclick="scNext()">
+                <h1>></h1>
+            </div>
             
-            
-        </div>
-    </content>
-
-    <content class="elem" id="feedback">
-        <div class="head">
-            <div></div>
-            <div><h1>FEEDBACK</h1></div>
-            <div></div>
         </div>
     </content>
 
@@ -151,5 +150,60 @@
         </div>
     </content>
 
+    <content class="query" id="contact">
+        <div>
+            <h1>Any Queries | Get a quote</h1>
+            <p>If you have any questions or queries regarding our service or pricing don’t worry
+                <br>
+                Our experts will call you.</p>
+        </div>
+        <div>
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="Your name">
+                <input type="text" id="fname" name="number" maxlength="12" placeholder="Your number">
+                <button type="button">Get a call</button>
+            </form>
+        </div>
+    </content>
+
+    <footer class="elem footer">
+        <div class="links">
+            <h1>PRODUCT</h1>
+            <a href="http://">Cost & Governance</a>
+            <a href="http://">Security & Complaince</a>
+            <a href="http://">Product N</a>
+            <a href="http://">Pricing & Plans</a>
+        </div>
+        <div class="links">
+            <h1>LEARN</h1>
+            <a href="http://">Articles</a>
+            <a href="http://">Register a demo</a>
+            <a href="http://">Webinars</a>
+            <a href="http://">FAQs</a>
+        </div>
+        <div class="links">
+            <h1>COMPANY</h1>
+            <a href="http://">About</a>
+            <a href="http://">Careers</a>
+            <a href="http://">Partners</a>
+            <a href="http://">Contact</a>
+        </div>
+
+        <div class="links subscribe">
+            <form>
+                <input type="mail" name="email" placeholder="Your @mail">
+                <button type="button">SUBSCRIBE</button>
+            </form>
+            <div class="social-links">
+                <a href="#" class="fa fa-tumblr"></a>
+                <a href="#" class="fa fa-telegram"></a>
+                <a href="#" class="fa fa-reddit"></a>
+                <a href="#" class="fa fa-vk"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>

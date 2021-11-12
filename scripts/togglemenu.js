@@ -5,17 +5,22 @@ function showMenu() {
     let button = document.getElementById("menu");
 
     menu.style.display="block";
-    setTimeout(()=> menu.style.opacity="1", 0);
     button.onclick = hideMenu;
-    document.ontouchstart = hideMenu;
+    setTimeout (() => menu.style.opacity="1", 100);
+
+   menu.style.display === "block" ? setTimeout ( ()=> document.onclick = hideMenu , 100) : document.onclick = "";
+   menu.style.display === "block" ? setTimeout ( ()=> document.ontouchmove = hideMenu , 100) : document.ontouchmove = "";
+
 }
 
 function hideMenu() {
     let menu = document.getElementById("navbar-mob");
     let button = document.getElementById("menu");
 
-    setTimeout(()=> menu.style.display="none", 300);
-    menu.style.opacity="0";
+    menu.style.opacity="0"
+    setTimeout (() =>menu.style.display="none",300);
     button.onclick = showMenu;
-    document.ontouchstart = "";
+
+    menu.style.display === "" ? setTimeout ( ()=> document.onclick = "", 100) : document.onclick = "";
+    menu.style.display === "" ? setTimeout ( ()=> document.ontouchmove = "" , 100) : document.ontouchmove = "";
 }

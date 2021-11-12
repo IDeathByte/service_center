@@ -134,7 +134,7 @@ li > a:hover {
 .description {
     text-align: center;
     font-size: 1.2em;
-    min-width:360px;
+    min-width:150px;
     max-width: 540px;
     height: max-content;
     padding: 25px;
@@ -181,15 +181,16 @@ li > a:hover {
     display: flex;
     flex-direction: row;
     background-color: #3D3D3D;
+    justify-content: space-between;
 }
 
 .sc-list > div {
-    width: 333px;
+    width: max-content;
     height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin:auto;
+    margin: auto 20px;
     color: #ffffff;
     transition: 0.3s;
 }
@@ -203,7 +204,9 @@ li > a:hover {
     background-color: #3D3D3D;
 }
 
-.feedback{}
+#sc-prev, #sc-next {
+    text-align: center;
+}
 
 .clients{
     background-color: #ffffff;
@@ -229,8 +232,113 @@ li > a:hover {
     margin: 4.5vw;
 }
 
+.query {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: max-content;
+    background-color: #097E89;
+    color: #ffffff;
+}
 
-@media screen and (max-width:1000px) {
+.query> div:first-child {
+    margin:auto;
+}
+
+.query> div:last-child {
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+div > form > input {
+    background-color: #097E89;
+    color: #ffffff;
+    border: 1px solid #ffffff69;
+    height: 40px;
+    width: 250px;
+    float: left;
+    border-collapse:collapse;
+    transition: 0.3s;
+    padding-left: 25px;
+}
+
+div > form > input:hover{
+    background-color: #1ca3af;
+}
+
+div > form > input::placeholder {
+    color: #ffffff;
+}
+
+div > form > button {
+    height: 40px;
+    float: left;
+    color: #097E89;
+    background-color: #ffffff;
+    border: none;
+    width: 100px;
+    transition: 0.3s;
+}
+
+div > form > button:hover {
+    background-color: #1caf8a;
+    color: #ffffff;
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #474747;
+    display: flex;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.links > h1 {
+    text-decoration: underline;
+}
+
+.links > a {
+    font-size: 1.3em;
+    transition: 0.3s;
+}
+
+.links > a:hover{
+    color: #097E89;
+}
+
+.subscribe {
+    margin:auto;
+}
+
+.subscribe > form > input {
+
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+}
+
+.subscribe > form > input::placeholder {
+    color: #000000;
+}
+
+.subscribe > form > button {
+    background-color: #0072BC;
+    color: #ffffff;
+}
+
+.subscribe > .social-links > a {
+    border-radius: 50%;
+    max-width: none;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:1300px) {
 
 
     header {
@@ -249,13 +357,14 @@ li > a:hover {
         text-align: center;
     }
 
+
     .sp-galery > img {
         max-width: 20%;
         margin: 40px;
     }
     
     .head {
-        font-size: 2.5vw
+        font-size: 2.2vw
     }
 
     .logo {
@@ -302,7 +411,59 @@ li > a:hover {
         background-color: #b5a0b673;
     }
 
-    .sc-list > .description {
+    .sc-list > .service {
         display:none;
+    }
+
+    .sc-list > div > h1 {
+        font-size: 6vw;
+    }
+
+    .query {
+        text-align: center;
+    }
+
+    .query> div:first-child {
+        margin: 10px;
+    }
+
+    .query> div:last-child {
+        margin: 10px;
+    }
+
+    div > form {
+        display: flex;
+        flex-direction: column;
+    }
+    div > form > input {
+        float: none;
+        
+    }
+
+    div > form > button {
+        float: none;
+        width: 250px;
+    }
+
+    .social-links > .fa {
+        border: none;
+        padding: none;
+        padding-top: 0.4em;
+        width: 1em;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .subscribe {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .subscribe > .social-links > .fa {
+        display: none;
     }
 }
