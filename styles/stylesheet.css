@@ -206,6 +206,7 @@ li > a:hover {
 
 #sc-prev, #sc-next {
     text-align: center;
+    visibility: hidden;
 }
 
 .clients{
@@ -363,6 +364,11 @@ div > form > button:hover {
         margin: 40px;
     }
     
+
+    #sc-prev, #sc-next {
+        visibility:visible;
+    }
+
     .head {
         font-size: 2.2vw
     }
@@ -418,6 +424,7 @@ div > form > button:hover {
     .sc-list > div > h1 {
         font-size: 6vw;
     }
+
 
     .query {
         text-align: center;
