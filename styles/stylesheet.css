@@ -47,7 +47,7 @@ a {
     color:#ffffff;
 }
 header {
-    background-image: url(../images/bg_banner.png);
+    background-image: url(/images/bg_banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
