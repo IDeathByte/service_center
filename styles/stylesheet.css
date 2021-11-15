@@ -6,11 +6,15 @@ body {
     max-width: 1600px;
     min-width: 360px;
     margin: auto;
-    background-color: #5a5a5a6b;
+    background-color: #634f9edc;
 }
 
 h1 {
     font-family: 'Sansation Regular', courier;
+}
+
+button {
+    cursor: pointer;
 }
 
 .elem{
@@ -79,6 +83,7 @@ nav {
     display:none;
     transition: 0.3s;
     opacity: 0;
+    cursor: pointer;
 }
 
 .menu {
@@ -101,7 +106,7 @@ li > a:hover {
 
 .social-links {
     display: inline-flex;
-    margin:auto;
+    margin: auto;
 }
 
 .fa {
@@ -231,6 +236,12 @@ li > a:hover {
 
 .sp-galery > img {
     margin: 4.5vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sp-galery > img:hover {
+    transform: scale(1.5);
 }
 
 .query {
@@ -383,14 +394,19 @@ div > form > button:hover {
 
     .navbar-mob{
         position: absolute;
-        padding: 15px;
-        margin: 10px 35px;
-        background-color: #093d39bd;
+        padding: 35px;
+        margin: 10px 15px;
+        background-color: #33093dbd;
+        border-radius: 5%;
+    }
+
+    .social-links {
+        margin-right: 15px;
     }
 
     .menu {
         display:block;
-        margin: 0 auto 0 55px;
+        margin: 0 auto 0 25px;
         width: 60px;
         transition: 0.3s;
     }
